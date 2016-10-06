@@ -11,8 +11,12 @@ function showNumber(num){
 function interval(){
         counter++;
         // write some code here
-
         showNumber(counter);
+
+        if(counter === 60){
+         counter = 0;
+
+        }
 }
 
 setInterval(interval, 500);
