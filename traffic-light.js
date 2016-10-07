@@ -30,9 +30,10 @@ function caution(){
   switchOn('.caution');
 }
 
+var number = document.querySelector("#number");
+
 function captureTimeChange(cb){
   var timeLeft = document.querySelector("#timeLeft");
-  var number = document.querySelector("#number");
 
   console.log(timeLeft);
 
@@ -45,11 +46,9 @@ function captureTimeChange(cb){
   });
 }
 
-
-
-/*
 var counter = 60;
 setInterval(function(){
+  number.innerHTML = counter;
   counter--;
   if (counter > 40){
     stop();
@@ -58,10 +57,9 @@ setInterval(function(){
     go();
   }
   else{
-    carefull();
+    caution();
   }
   if (counter === 0){
     counter = 60;
   }
 }, 500);
-*/
